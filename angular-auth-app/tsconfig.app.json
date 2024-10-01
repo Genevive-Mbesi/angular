@@ -4,30 +4,12 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": [
-      "node"
-    ],
-    "target": "es2015",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "rootDir": "./src", // Ensures TypeScript knows where your source files are
-    "strict": true, // Enables all strict type-checking options
-    "esModuleInterop": true, // Allows default imports from modules with no default export
-    "skipLibCheck": true, // Skips type checking of declaration files
-    "forceConsistentCasingInFileNames": true // Ensures consistent file naming
+    "types": []
   },
   "files": [
-    "src/main.ts",
-    "src/main.server.ts",
-    "server.ts"
+    "src/main.ts"
   ],
   "include": [
-    "src/**/*.d.ts",
-    "src/**/*.ts" // Includes all TypeScript files in the src directory
-  ],
-  "exclude": [
-    "node_modules", // Excludes the node_modules folder
-    "dist" // Excludes the output directory
+    "src/**/*.d.ts"
   ]
 }

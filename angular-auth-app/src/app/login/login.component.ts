@@ -33,7 +33,8 @@ export class LoginComponent {
           // Store the JWT token in localStorage
           localStorage.setItem('access_token', response.token);
           alert('Login successful!');
-          
+          // Navigate to a different route after successful login
+          this.router.navigate(['/dashboard']);
         },
         error: (error) => {
           this.errorMessage = 'Invalid email or password';
