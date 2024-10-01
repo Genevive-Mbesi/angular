@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-login',
+  selector: 'app-login-form',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })

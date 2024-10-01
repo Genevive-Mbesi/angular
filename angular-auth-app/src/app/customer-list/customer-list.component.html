@@ -1,0 +1,10 @@
+<!-- src/app/customer-list/customer-list.component.html -->
+<div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+<ul>
+  <li *ngFor="let customer of customers">
+    <strong>Name:</strong> {{ customer.name }}<br>
+    <strong>Email:</strong> {{ customer.email }}<br>
+    <strong>Phone Number:</strong> {{ customer.phone_number }}
+  </li>
+</ul>
+

@@ -1,0 +1,8 @@
+<!-- src/app/product-list/product-list.component.html -->
+<div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+<ul>
+  <li *ngFor="let product of products">
+    <strong>{{ product.name }}</strong> - ${{ (product.priceInCents / 100).toFixed(2) }}<br>
+    Description: {{ product.description }}
+  </li>
+</ul>
