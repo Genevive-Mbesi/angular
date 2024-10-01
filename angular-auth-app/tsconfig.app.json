@@ -6,7 +6,16 @@
     "outDir": "./out-tsc/app",
     "types": [
       "node"
-    ]
+    ],
+    "target": "es2015", // or another version if needed
+    "module": "esnext", // Use 'esnext' for modern module resolution
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "rootDir": "./src", // Ensure TypeScript knows where your source files are
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Allow default imports from modules with no default export
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true // Ensure consistent file naming
   },
   "files": [
     "src/main.ts",
@@ -14,6 +23,11 @@
     "server.ts"
   ],
   "include": [
-    "src/**/*.d.ts"
+    "src/**/*.d.ts",
+    "src/**/*.ts" // Include all TypeScript files in the src directory
+  ],
+  "exclude": [
+    "node_modules", // Exclude the node_modules folder
+    "dist" // Exclude the output directory
   ]
 }
