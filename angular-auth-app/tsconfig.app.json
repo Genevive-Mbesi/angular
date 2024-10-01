@@ -7,15 +7,15 @@
     "types": [
       "node"
     ],
-    "target": "es2015", // or another version if needed
-    "module": "esnext", // Use 'esnext' for modern module resolution
+    "target": "es2015",
+    "module": "esnext",
     "moduleResolution": "node",
     "sourceMap": true,
-    "rootDir": "./src", // Ensure TypeScript knows where your source files are
-    "strict": true, // Enable all strict type-checking options
-    "esModuleInterop": true, // Allow default imports from modules with no default export
-    "skipLibCheck": true, // Skip type checking of declaration files
-    "forceConsistentCasingInFileNames": true // Ensure consistent file naming
+    "rootDir": "./src", // Ensures TypeScript knows where your source files are
+    "strict": true, // Enables all strict type-checking options
+    "esModuleInterop": true, // Allows default imports from modules with no default export
+    "skipLibCheck": true, // Skips type checking of declaration files
+    "forceConsistentCasingInFileNames": true // Ensures consistent file naming
   },
   "files": [
     "src/main.ts",
@@ -24,10 +24,10 @@
   ],
   "include": [
     "src/**/*.d.ts",
-    "src/**/*.ts" // Include all TypeScript files in the src directory
+    "src/**/*.ts" // Includes all TypeScript files in the src directory
   ],
   "exclude": [
-    "node_modules", // Exclude the node_modules folder
-    "dist" // Exclude the output directory
+    "node_modules", // Excludes the node_modules folder
+    "dist" // Excludes the output directory
   ]
 }
