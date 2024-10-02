@@ -16,7 +16,7 @@ export class ProductListComponent implements OnInit {
   ngOnInit() {
     this.productService.getProducts().subscribe(
       (data: any[]) => {
-        this.products = data; // Assuming the response is an array of products
+        this.products = data; 
       },
       (error) => {
         this.errorMessage = 'Error fetching products. Please try again later.';

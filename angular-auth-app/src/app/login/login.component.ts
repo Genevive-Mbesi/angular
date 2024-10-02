@@ -4,12 +4,11 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-login-form',
+  selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-
   loginForm: FormGroup;
   errorMessage: string = '';
 
@@ -30,7 +29,7 @@ export class LoginComponent {
     this.http.post('http://localhost:8000/api/login', loginData)
       .subscribe({
         next: (response: any) => {
-          // Store the JWT token in localStorage
+          // Store the JWT token 
           localStorage.setItem('access_token', response.token);
           alert('Login successful!');
           // Navigate to a different route after successful login

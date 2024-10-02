@@ -1,4 +1,4 @@
-// src/app/customer-list/customer-list.component.ts
+
 import { Component, OnInit } from '@angular/core';
 import { CustomerService } from '../services/customer.service';
 
@@ -16,7 +16,7 @@ export class CustomerListComponent implements OnInit {
   ngOnInit() {
     this.customerService.getCustomers().subscribe(
       (data: any[]) => {
-        this.customers = data; 
+        this.customers = data;
       },
       (error) => {
         if (error.status === 401) {
